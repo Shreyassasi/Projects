@@ -58,7 +58,7 @@ void UART_Tx (char data)
 	
 	for (uint32_t i=0; i<ms; i++)
 	{
-		while(!(SysTick->CTRL & (0x10000))) ; /* while this is not set delay is not eleapsed. */
+		while(!(SysTick->CTRL & (0x10000))) ; /* while this is not set, delay is not eleapsed. */
 		
 	}
 	
