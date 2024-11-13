@@ -1,0 +1,986 @@
+[0115.550] I> MB1 (version: 1.4.0.2-t234-54845784-08a4de08)
+[0115.555] I> t234-A01-1-Silicon (0x12347) Prod
+[0115.559] I> Boot-mode : BPMP Diagnostic
+[0115.563] I> Entry timestamp: 0x00000000
+[0115.567] I> last_boot_error: 0x0
+[0115.570] I> BR-BCT: preprod_dev_sign: 0
+[0115.574] I> rst_source: 0x0, rst_level: 0x0
+[0115.578] I> Task: Initialize MB2 params
+[0115.582] I> MB2-params @ 0x40060000
+[0115.586] I> Task: Crypto init
+[0115.589] I> Task: Perform MB1 KAT tests
+[0115.592] I> Task: NVRNG health check
+[0115.596] I> NVRNG: Health check success
+[0115.600] I> Task: Secure debug controls
+[0115.604] I> Task: strap war set
+[0115.607] I> Task: Program NV master stream id
+[0115.611] I> Task: Verify boot mode
+[0115.617] I> Task: Alias fuses
+[0115.620] W> FUSE_ALIAS: Fuse alias on production fused part is not supported.
+[0115.627] I> Task: Print SKU type
+[0115.630] I> FUSE_OPT_CCPLEX_CLUSTER_DISABLE = 0x000001c8
+[0115.635] I> FUSE_OPT_GPC_DISABLE = 0x00000002
+[0115.639] I> FUSE_OPT_TPC_DISABLE = 0x000000f0
+[0115.644] I> FUSE_OPT_DLA_DISABLE = 0x00000003
+[0115.648] I> FUSE_OPT_PVA_DISABLE = 0x00000001
+[0115.652] I> FUSE_OPT_NVENC_DISABLE = 0x00000001
+[0115.657] I> FUSE_OPT_NVDEC_DISABLE = 0x00000000
+[0115.661] I> FUSE_OPT_FSI_DISABLE = 0x00000001
+[0115.665] I> FUSE_OPT_EMC_DISABLE = 0x0000000c
+[0115.670] I> FUSE_BOOTROM_PATCH_VERSION = 0x7
+[0115.674] I> FUSE_PSCROM_PATCH_VERSION = 0x7
+[0115.678] I> FUSE_OPT_ADC_CAL_FUSE_REV = 0x2
+[0115.682] I> FUSE_SKU_INFO_0 = 0xd5
+[0115.685] I> FUSE_OPT_SAMPLE_TYPE_0 = 0x3 PS 
+[0115.690] I> FUSE_PACKAGE_INFO_0 = 0x2
+[0115.693] I> SKU: Prod
+[0115.695] I> Task: Boost clocks
+[0115.698] I> Initializing NAFLL for BPMP_CPU_NIC.
+[0115.704] I> BPMP NAFLL: fll_lock = 1, dvco_min_reached = 0
+[0115.709] I> BPMP NAFLL lock success.
+[0115.713] I> BPMP_CPU_NIC : src = 42, divisor = 0
+[0115.717] I> Initializing PLLC2 for AXI_CBB.
+[0115.721] I> AXI_CBB : src = 35, divisor = 0
+[0115.725] I> Task: Voltage monitor
+[0115.729] I> VMON: Vmon re-calibration and fine tuning done
+[0115.734] I> Task: UPHY init
+[0115.737] W> UPHY: UPHY lane info table is empty in MB1 BCT.
+[0115.743] I> Task: Boot device init
+[0115.746] I> Boot_device: RCM
+[0115.749] I> USB configuration success
+[0115.753] I> Task: TSC init
+[0115.756] I> Task: Enable WDT 5th expiry
+[0115.759] I> Task: I2C register
+[0115.762] I> Task: Set I2C bus freq
+[0115.766] I> Task: Reset FSI
+[0115.768] I> Task: Enable clock-mon
+[0115.772] I> FMON: Fmon re-programming done
+[0115.776] I> Task: Mapper init
+[0115.779] I> Task: MB1 fixed firewalls
+[0115.786] W> Firewall readback mismatch
+[0115.791] I> Task: Load MB2/Applet/FSKP
+[0115.795] I> Loading MB2 Applet
+[0115.798] I> Slot: 0
+[0115.800] I> Binary[21] block-352321536 (partition size: 0x50000)
+[0115.806] I> Binary name: MB2-Applet
+[0115.809] I> Size of crypto header is 8192
+[0115.813] I> Size of crypto header is 8192
+[0115.817] I> BCH of MB2-Applet read from storage
+[0115.822] I> BCH address is : 0x4004e000
+[0115.825] I> MB2-Applet header integrity check is success
+[0115.831] I> Binary magic in BCH component 0 is MB2A
+[0115.836] I> component binary type is 21
+[0115.839] I> Size of crypto header is 8192
+[0115.852] I> MB2-Applet binary is read from storage
+[0115.857] I> MB2-Applet binary integrity check is success
+[0115.862] I> Binary MB2-Applet loaded successfully at 0x40000000 (0x42440)
+[0115.869] I> Task: Prepare MB2 params
+[0115.873] I> Task: Misc NV security settings
+[0115.877] I> NVDEC sticky bits programming done
+[0115.881] I> Successfully powergated NVDEC
+[0115.885] I> Task: Disable/Reload WDT
+[0115.889] I> Task: Program misc carveouts
+[0115.893] I> Task: Disable SCPM/POD reset
+[0115.897] I> SLCG Global override status := 0x0
+[0115.901] I> MB1: MSS reconfig completed
+[0115.905] W> Firewall readback mismatch
+[0115.909] W> Firewall readback mismatch
+[0115.912] W> Firewall readback mismatch
+[0115.916] W> Firewall readback mismatch
+[0115.920] W> Firewall readback mismatch
+[0115.923] W> Firewall readback mismatch
+[0115.927] W> Firewall readback mismatch
+[0115.931] W> Firewall readback mismatch
+[0115.934] W> Firewall readback mismatch
+[0115.938] W> Firewall readback mismatch
+I> Applet (version: 0.0.0.0-t234-54845784-b648c465)
+I> t234-A01-1-Silicon (0x12347) Prod
+I> Emulation: 
+I> Entry timestamp: 0x00000000
+I> Task: Pinmux init
+I> Task: Crypto init
+I> Task: Boot device init
+I> Applet do storage init
+I> Boot_device: QSPI_FLASH instance: 0
+I> Qspi clock source : clk_m
+I> QSPI Flash: Macronix 64MB
+I> QSPI-0l initialized successfully
+I> Secondary storage device: SDMMC_BOOT instance: 3
+E> Error in command_complete 18001 int_status
+E> OCR failed, error = 39390706
+E> STORAGE: Failed to open SDMMC: 3.
+W> Ignoring init failure for device 0-3
+I> Secondary storage device: SDMMC_USER instance: 3
+E> Error in command_complete 18001 int_status
+E> OCR failed, error = 39390706
+E> STORAGE: Failed to open SDMMC: 3.
+W> Ignoring init failure for device 1-3
+I> Secondary storage device: QSPI_FLASH instance: 0
+I> Task: I2C register
+I> Task: Register exit handlers
+I> Task: Enter 3p server
+I> USB configuration success
+I> Populate chip info
+I> RAM_CODE 0x4000021
+I> Populate eeprom info
+I> Populate eeprom info for module cvm
+I> Rebooting : reboot-recovery
+
+
+??
+[0003.054] I> MB1 (version: 1.4.0.2-t234-54845784-08a4de08)
+[0003.059] I> t234-A01-1-Silicon (0x12347) Prod
+[0003.063] I> Boot-mode : BPMP Diagnostic
+[0003.067] I> Entry timestamp: 0x00000000
+[0003.071] I> last_boot_error: 0x0
+[0003.074] I> BR-BCT: preprod_dev_sign: 0
+[0003.078] I> rst_source: 0xb, rst_level: 0x1
+[0003.082] I> Task: Initialize MB2 params
+[0003.086] I> MB2-params @ 0x40060000
+[0003.089] I> Task: Crypto init
+[0003.092] I> Task: Perform MB1 KAT tests
+[0003.096] I> Task: NVRNG health check
+[0003.100] I> NVRNG: Health check success
+[0003.104] I> Task: Secure debug controls
+[0003.107] I> Task: strap war set
+[0003.110] I> Task: Program NV master stream id
+[0003.115] I> Task: Verify boot mode
+[0003.120] I> Task: Alias fuses
+[0003.124] W> FUSE_ALIAS: Fuse alias on production fused part is not supported.
+[0003.131] I> Task: Print SKU type
+[0003.134] I> FUSE_OPT_CCPLEX_CLUSTER_DISABLE = 0x000001c8
+[0003.140] I> FUSE_OPT_GPC_DISABLE = 0x00000002
+[0003.144] I> FUSE_OPT_TPC_DISABLE = 0x000000f0
+[0003.148] I> FUSE_OPT_DLA_DISABLE = 0x00000003
+[0003.153] I> FUSE_OPT_PVA_DISABLE = 0x00000001
+[0003.157] I> FUSE_OPT_NVENC_DISABLE = 0x00000001
+[0003.161] I> FUSE_OPT_NVDEC_DISABLE = 0x00000000
+[0003.166] I> FUSE_OPT_FSI_DISABLE = 0x00000001
+[0003.170] I> FUSE_OPT_EMC_DISABLE = 0x0000000c
+[0003.174] I> FUSE_BOOTROM_PATCH_VERSION = 0x7
+[0003.178] I> FUSE_PSCROM_PATCH_VERSION = 0x7
+[0003.183] I> FUSE_OPT_ADC_CAL_FUSE_REV = 0x2
+[0003.187] I> FUSE_SKU_INFO_0 = 0xd5
+[0003.190] I> FUSE_OPT_SAMPLE_TYPE_0 = 0x3 PS 
+[0003.194] I> FUSE_PACKAGE_INFO_0 = 0x2
+[0003.198] I> SKU: Prod
+[0003.200] I> Task: Boost clocks
+[0003.203] I> Initializing NAFLL for BPMP_CPU_NIC.
+[0003.208] I> BPMP NAFLL: fll_lock = 1, dvco_min_reached = 0
+[0003.213] I> BPMP NAFLL lock success.
+[0003.217] I> BPMP_CPU_NIC : src = 42, divisor = 0
+[0003.221] I> Initializing PLLC2 for AXI_CBB.
+[0003.226] I> AXI_CBB : src = 35, divisor = 0
+[0003.230] I> Task: Voltage monitor
+[0003.233] I> VMON: Vmon re-calibration and fine tuning done
+[0003.239] I> Task: UPHY init
+[0003.242] W> UPHY: UPHY lane info table is empty in MB1 BCT.
+[0003.248] I> Task: Boot device init
+[0003.251] I> Boot_device: RCM
+[0003.254] I> USB configuration success
+[0003.258] I> Task: TSC init
+[0003.260] I> Task: Enable WDT 5th expiry
+[0003.264] I> Task: I2C register
+[0003.267] I> Task: Set I2C bus freq
+[0003.270] I> Task: Reset FSI
+[0003.273] I> Task: Enable clock-mon
+[0003.277] I> FMON: Fmon re-programming done
+[0003.281] I> Task: Mapper init
+[0003.284] I> Task: MB1 fixed firewalls
+[0003.291] W> Firewall readback mismatch
+[0003.296] I> Task: Load MB2/Applet/FSKP
+[0003.299] I> Loading MB2 Applet
+[0003.302] I> Slot: 0
+[0003.304] I> Binary[21] block-352321536 (partition size: 0x50000)
+[0003.310] I> Binary name: MB2-Applet
+[0003.314] I> Size of crypto header is 8192
+[0003.318] I> Size of crypto header is 8192
+[0003.322] I> BCH of MB2-Applet read from storage
+[0003.326] I> BCH address is : 0x4004e000
+[0003.330] I> MB2-Applet header integrity check is success
+[0003.335] I> Binary magic in BCH component 0 is MB2A
+[0003.340] I> component binary type is 21
+[0003.344] I> Size of crypto header is 8192
+[0003.356] I> MB2-Applet binary is read from storage
+[0003.362] I> MB2-Applet binary integrity check is success
+[0003.367] I> Binary MB2-Applet loaded successfully at 0x40000000 (0x42440)
+[0003.374] I> Task: Prepare MB2 params
+[0003.378] I> Task: Misc NV security settings
+[0003.382] I> NVDEC sticky bits programming done
+[0003.386] I> Successfully powergated NVDEC
+[0003.390] I> Task: Disable/Reload WDT
+[0003.394] I> Task: Program misc carveouts
+[0003.397] I> Task: Disable SCPM/POD reset
+[0003.401] I> SLCG Global override status := 0x0
+[0003.406] I> MB1: MSS reconfig completed
+[0003.410] W> Firewall readback mismatch
+[0003.413] W> Firewall readback mismatch
+[0003.417] W> Firewall readback mismatch
+[0003.421] W> Firewall readback mismatch
+[0003.424] W> Firewall readback mismatch
+[0003.428] W> Firewall readback mismatch
+[0003.432] W> Firewall readback mismatch
+[0003.435] W> Firewall readback mismatch
+[0003.439] W> Firewall readback mismatch
+[0003.443] W> Firewall readback mismatch
+I> Applet (version: 0.0.0.0-t234-54845784-b648c465)
+I> t234-A01-1-Silicon (0x12347) Prod
+I> Emulation: 
+I> Entry timestamp: 0x00000000
+I> Task: Pinmux init
+I> Task: Crypto init
+I> Task: Boot device init
+I> Applet do storage init
+I> Boot_device: QSPI_FLASH instance: 0
+I> Qspi clock source : clk_m
+I> QSPI Flash: Macronix 64MB
+I> QSPI-0l initialized successfully
+I> Secondary storage device: SDMMC_BOOT instance: 3
+E> Error in command_complete 18001 int_status
+E> OCR failed, error = 39390706
+E> STORAGE: Failed to open SDMMC: 3.
+W> Ignoring init failure for device 0-3
+I> Secondary storage device: SDMMC_USER instance: 3
+E> Error in command_complete 18001 int_status
+E> OCR failed, error = 39390706
+E> STORAGE: Failed to open SDMMC: 3.
+W> Ignoring init failure for device 1-3
+I> Secondary storage device: QSPI_FLASH instance: 0
+I> Task: I2C register
+I> Task: Register exit handlers
+I> Task: Enter 3p server
+I> USB configuration success
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Populate chip info
+I> RAM_CODE 0x4000021
+I> Populate eeprom info
+I> Populate eeprom info for module cvm
+I> dump bct
+I> strt_pg_num(0) num_of_pgs(16) read_buf(0x40071738)
+I> BRBCT integrity check is success
+I> Validation passed for 1 copy of BRBCT @ 0
+I> Rebooting : reboot-recovery
+
+[0033.563] I> MB1 (version: 1.4.0.2-t234-54845784-08a4de08)
+[0033.568] I> t234-A01-1-Silicon (0x12347) Prod
+[0033.572] I> Boot-mode : BPMP Diagnostic
+[0033.576] I> Entry timestamp: 0x00000000
+[0033.580] I> last_boot_error: 0x0
+[0033.583] I> BR-BCT: preprod_dev_sign: 0
+[0033.587] I> rst_source: 0xb, rst_level: 0x1
+[0033.591] I> Task: Initialize MB2 params
+[0033.595] I> MB2-params @ 0x40060000
+[0033.599] I> Task: Crypto init
+[0033.602] I> Task: Perform MB1 KAT tests
+[0033.606] I> Task: NVRNG health check
+[0033.609] I> NVRNG: Health check success
+[0033.613] I> Task: Secure debug controls
+[0033.617] I> Task: strap war set
+[0033.620] I> Task: Program NV master stream id
+[0033.624] I> Task: Verify boot mode
+[0033.630] I> Task: Alias fuses
+[0033.633] W> FUSE_ALIAS: Fuse alias on production fused part is not supported.
+[0033.640] I> Task: Print SKU type
+[0033.643] I> FUSE_OPT_CCPLEX_CLUSTER_DISABLE = 0x000001c8
+[0033.648] I> FUSE_OPT_GPC_DISABLE = 0x00000002
+[0033.653] I> FUSE_OPT_TPC_DISABLE = 0x000000f0
+[0033.657] I> FUSE_OPT_DLA_DISABLE = 0x00000003
+[0033.661] I> FUSE_OPT_PVA_DISABLE = 0x00000001
+[0033.666] I> FUSE_OPT_NVENC_DISABLE = 0x00000001
+[0033.670] I> FUSE_OPT_NVDEC_DISABLE = 0x00000000
+[0033.674] I> FUSE_OPT_FSI_DISABLE = 0x00000001
+[0033.679] I> FUSE_OPT_EMC_DISABLE = 0x0000000c
+[0033.683] I> FUSE_BOOTROM_PATCH_VERSION = 0x7
+[0033.687] I> FUSE_PSCROM_PATCH_VERSION = 0x7
+[0033.691] I> FUSE_OPT_ADC_CAL_FUSE_REV = 0x2
+[0033.695] I> FUSE_SKU_INFO_0 = 0xd5
+[0033.699] I> FUSE_OPT_SAMPLE_TYPE_0 = 0x3 PS 
+[0033.703] I> FUSE_PACKAGE_INFO_0 = 0x2
+[0033.707] I> SKU: Prod
+[0033.709] I> Task: Boost clocks
+[0033.712] I> Initializing NAFLL for BPMP_CPU_NIC.
+[0033.717] I> BPMP NAFLL: fll_lock = 1, dvco_min_reached = 0
+[0033.722] I> BPMP NAFLL lock success.
+[0033.726] I> BPMP_CPU_NIC : src = 42, divisor = 0
+[0033.730] I> Initializing PLLC2 for AXI_CBB.
+[0033.735] I> AXI_CBB : src = 35, divisor = 0
+[0033.739] I> Task: Voltage monitor
+[0033.742] I> VMON: Vmon re-calibration and fine tuning done
+[0033.747] I> Task: UPHY init
+[0033.751] W> UPHY: UPHY lane info table is empty in MB1 BCT.
+[0033.756] I> Task: Boot device init
+[0033.759] I> Boot_device: RCM
+[0033.762] I> USB configuration success
+[0033.766] I> Task: TSC init
+[0033.769] I> Task: Enable WDT 5th expiry
+[0033.773] I> Task: I2C register
+[0033.776] I> Task: Set I2C bus freq
+[0033.779] I> Task: Reset FSI
+[0033.782] I> Task: Enable clock-mon
+[0033.786] I> FMON: Fmon re-programming done
+[0033.790] I> Task: Mapper init
+[0033.793] I> Task: MB1 fixed firewalls
+[0033.799] W> Firewall readback mismatch
+[0033.804] I> Task: Load MB2/Applet/FSKP
+[0033.808] I> Loading MB2 Applet
+[0033.811] I> Slot: 0
+[0033.813] I> Binary[21] block-352321536 (partition size: 0x50000)
+[0033.819] I> Binary name: MB2-Applet
+[0033.822] I> Size of crypto header is 8192
+[0033.826] I> Size of crypto header is 8192
+[0033.830] I> BCH of MB2-Applet read from storage
+[0033.835] I> BCH address is : 0x4004e000
+[0033.839] I> MB2-Applet header integrity check is success
+[0033.844] I> Binary magic in BCH component 0 is MB2A
+[0033.849] I> component binary type is 21
+[0033.853] I> Size of crypto header is 8192
+[0033.865] I> MB2-Applet binary is read from storage
+[0033.870] I> MB2-Applet binary integrity check is success
+[0033.876] I> Binary MB2-Applet loaded successfully at 0x40000000 (0x42440)
+[0033.882] I> Task: Prepare MB2 params
+[0033.886] I> Task: Misc NV security settings
+[0033.890] I> NVDEC sticky bits programming done
+[0033.895] I> Successfully powergated NVDEC
+[0033.899] I> Task: Disable/Reload WDT
+[0033.902] I> Task: Program misc carveouts
+[0033.906] I> Task: Disable SCPM/POD reset
+[0033.910] I> SLCG Global override status := 0x0
+[0033.915] I> MB1: MSS reconfig completed
+[0033.918] W> Firewall readback mismatch
+[0033.922] W> Firewall readback mismatch
+[0033.926] W> Firewall readback mismatch
+[0033.929] W> Firewall readback mismatch
+[0033.933] W> Firewall readback mismatch
+[0033.937] W> Firewall readback mismatch
+[0033.940] W> Firewall readback mismatch
+[0033.944] W> Firewall readback mismatch
+[0033.948] W> Firewall readback mismatch
+[0033.951] W> Firewall readback mismatch
+I> Applet (version: 0.0.0.0-t234-54845784-b648c465)
+I> t234-A01-1-Silicon (0x12347) Prod
+I> Emulation: 
+I> Entry timestamp: 0x00000000
+I> Task: Pinmux init
+I> Task: Crypto init
+I> Task: Boot device init
+I> Applet do storage init
+I> Boot_device: QSPI_FLASH instance: 0
+I> Qspi clock source : clk_m
+I> QSPI Flash: Macronix 64MB
+I> QSPI-0l initialized successfully
+I> Secondary storage device: SDMMC_BOOT instance: 3
+E> Error in command_complete 18000 int_status
+E> OCR failed, error = 39390706
+E> STORAGE: Failed to open SDMMC: 3.
+W> Ignoring init failure for device 0-3
+I> Secondary storage device: SDMMC_USER instance: 3
+E> Error in command_complete 18001 int_status
+E> OCR failed, error = 39390706
+E> STORAGE: Failed to open SDMMC: 3.
+W> Ignoring init failure for device 1-3
+I> Secondary storage device: QSPI_FLASH instance: 0
+I> Task: I2C register
+I> Task: Register exit handlers
+I> Task: Enter 3p server
+I> USB configuration success
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Reading fuses
+I> Read fuse successfully
+I> Populate chip info
+I> RAM_CODE 0x4000021
+I> Populate eeprom info
+I> Populate eeprom info for module cvm
+I> dump bct
+I> strt_pg_num(0) num_of_pgs(16) read_buf(0x40071738)
+I> BRBCT integrity check is success
+I> Validation passed for 1 copy of BRBCT @ 0
+I> Rebooting : reboot-recovery
+
+[0059.136] I> MB1 (version: 1.4.0.2-t234-54845784-08a4de08)
+[0059.142] I> t234-A01-1-Silicon (0x12347) Prod
+[0059.146] I> Boot-mode : Coldboot
+[0059.149] I> Entry timestamp: 0x00000000
+[0059.153] I> last_boot_error: 0x0
+[0059.156] I> BR-BCT: preprod_dev_sign: 0
+[0059.160] I> rst_source: 0xb, rst_level: 0x1
+[0059.164] I> Task: SE error check
+[0059.167] I> Task: Bootchain select WAR set
+[0059.171] I> Task: Enable SLCG
+[0059.174] I> Task: CRC check
+[0059.177] I> Task: Initialize MB2 params
+[0059.181] I> MB2-params @ 0x40060000
+[0059.185] I> Task: Crypto init
+[0059.188] I> Task: Perform MB1 KAT tests
+[0059.192] I> Task: NVRNG health check
+[0059.195] I> NVRNG: Health check success
+[0059.199] I> Task: MSS Bandwidth limiter settings for iGPU clients
+[0059.205] I> Task: Enabling and initialization of Bandwidth limiter
+[0059.211] I> No request to configure MBWT settings for any PC!
+[0059.217] I> Task: Secure debug controls
+[0059.220] I> Task: strap war set
+[0059.224] I> Task: Initialize SOC Therm
+[0059.227] I> Task: Program NV master stream id
+[0059.232] I> Task: Verify boot mode
+[0059.237] I> Task: Alias fuses
+[0059.241] W> FUSE_ALIAS: Fuse alias on production fused part is not supported.
+[0059.248] I> Task: Print SKU type
+[0059.251] I> FUSE_OPT_CCPLEX_CLUSTER_DISABLE = 0x000001c8
+[0059.256] I> FUSE_OPT_GPC_DISABLE = 0x00000002
+[0059.261] I> FUSE_OPT_TPC_DISABLE = 0x000000f0
+[0059.265] I> FUSE_OPT_DLA_DISABLE = 0x00000003
+[0059.269] I> FUSE_OPT_PVA_DISABLE = 0x00000001
+[0059.273] I> FUSE_OPT_NVENC_DISABLE = 0x00000001
+[0059.278] I> FUSE_OPT_NVDEC_DISABLE = 0x00000000
+[0059.282] I> FUSE_OPT_FSI_DISABLE = 0x00000001
+[0059.287] I> FUSE_OPT_EMC_DISABLE = 0x0000000c
+[0059.291] I> FUSE_BOOTROM_PATCH_VERSION = 0x7
+[0059.295] I> FUSE_PSCROM_PATCH_VERSION = 0x7
+[0059.299] I> FUSE_OPT_ADC_CAL_FUSE_REV = 0x2
+[0059.303] I> FUSE_SKU_INFO_0 = 0xd5
+[0059.307] I> FUSE_OPT_SAMPLE_TYPE_0 = 0x3 PS 
+[0059.311] I> FUSE_PACKAGE_INFO_0 = 0x2
+[0059.314] I> SKU: Prod
+[0059.317] I> Task: Boost clocks
+[0059.320] I> Initializing NAFLL for BPMP_CPU_NIC.
+[0059.325] I> BPMP NAFLL: fll_lock = 1, dvco_min_reached = 0
+[0059.330] I> BPMP NAFLL lock success.
+[0059.334] I> BPMP_CPU_NIC : src = 42, divisor = 0
+[0059.338] I> Initializing PLLC2 for AXI_CBB.
+[0059.342] I> AXI_CBB : src = 35, divisor = 0
+[0059.347] I> Task: Voltage monitor
+[0059.350] I> VMON: Vmon re-calibration and fine tuning done
+[0059.355] I> Task: UPHY init
+[0059.360] I> HSIO UPHY init done
+[0059.363] W> Skipping GBE UPHY config
+[0059.367] I> Task: Boot device init
+[0059.370] I> Boot_device: RCM
+[0059.373] I> USB configuration success
+[0059.377] I> Task: TSC init
+0059.380] I> Task: Load membct
+[0059.382] I> RAM_CODE 0x4000021
+[0059.385] I> Loading MEMBCT 
+[0059.388] I> Slot: 0
+[0059.390] I> Binary[0] block-0 (partition size: 0x40000)
+[0059.395] I> Binary name: MEM-BCT-0
+[0059.399] I> Size of crypto header is 8192
+[0059.403] I> Size of crypto header is 8192
+[0059.416] I> BCH of MEM-BCT-0 read from storage
+[0059.420] I> BCH address is : 0x40050000
+[0059.424] I> MEM-BCT-0 header integrity check is success
+[0059.429] I> Binary magic in BCH component 0 is MEM0
+[0059.434] I> component binary type is 0
+[0059.440] I> MEM-BCT-0 binary is read from storage
+[0059.444] I> MEM-BCT-0 binary integrity check is success
+[0059.450] I> Binary MEM-BCT-0 loaded successfully at 0x40040000 (0xe580)
+[0059.456] I> RAM_CODE 0x4000021
+[0059.461] I> RAM_CODE 0x4000021
+[0059.465] I> Task: Load Page retirement list
+[0059.470] I> Task: SDRAM params override
+[0059.473] I> Task: Save mem-bct info
+[0059.477] I> Task: Carveout allocate
+[0059.480] I> Update CCPLEX IST carveout from MB1-BCT
+[0059.485] I> ECC region[0]: Start:0x0, End:0x0
+[0059.489] I> ECC region[1]: Start:0x0, End:0x0
+[0059.494] I> ECC region[2]: Start:0x0, End:0x0
+[0059.498] I> ECC region[3]: Start:0x0, End:0x0
+[0059.502] I> ECC region[4]: Start:0x0, End:0x0
+[0059.506] I> Non-ECC region[0]: Start:0x80000000, End:0x280000000
+[0059.512] I> Non-ECC region[1]: Start:0x0, End:0x0
+[0059.517] I> Non-ECC region[2]: Start:0x0, End:0x0
+[0059.522] I> Non-ECC region[3]: Start:0x0, End:0x0
+[0059.526] I> Non-ECC region[4]: Start:0x0, End:0x0
+[0059.537] I> allocated(CO:43) base:0xbe000000 size:0x4000000 align: 0x200000
+[0059.544] I> allocated(CO:39) base:0x27de00000 size:0x2200000 align: 0x10000
+[0059.551] I> allocated(CO:20) base:0x27a000000 size:0x2000000 align: 0x2000000
+[0059.558] I> allocated(CO:24) base:0x278000000 size:0x2000000 align: 0x2000000
+[0059.565] I> allocated(CO:28) base:0x276000000 size:0x2000000 align: 0x2000000
+[0059.572] I> allocated(CO:22) base:0x27c000000 size:0x1000000 align: 0x1000000
+[0059.579] I> allocated(CO:35) base:0x275000000 size:0x1000000 align: 0x100000
+[0059.586] I> allocated(CO:02) base:0x27d000000 size:0x800000 align: 0x800000
+[0059.593] I> allocated(CO:03) base:0x274800000 size:0x800000 align: 0x800000
+[0059.600] I> allocated(CO:06) base:0x274000000 size:0x800000 align: 0x800000
+[0059.607] I> allocated(CO:56) base:0x273800000 size:0x800000 align: 0x200000
+[0059.614] I> allocated(CO:07) base:0x27d800000 size:0x400000 align: 0x400000
+[0059.621] I> allocated(CO:33) base:0x273400000 size:0x400000 align: 0x200000
+[0059.628] I> allocated(CO:19) base:0x273180000 size:0x280000 align: 0x10000
+[0059.635] I> allocated(CO:23) base:0x27dc00000 size:0x200000 align: 0x200000
+[0059.642] I> allocated(CO:01) base:0x273000000 size:0x100000 align: 0x100000
+[0059.649] I> allocated(CO:05) base:0x272f00000 size:0x100000 align: 0x100000
+[0059.656] I> allocated(CO:08) base:0x272e00000 size:0x100000 align: 0x100000
+[0059.663] I> allocated(CO:09) base:0x272d00000 size:0x100000 align: 0x100000
+[0059.670] I> allocated(CO:12) base:0x272c00000 size:0x100000 align: 0x100000
+[0059.677] I> allocated(CO:15) base:0x272b00000 size:0x100000 align: 0x100000
+[0059.684] I> allocated(CO:17) base:0x272a00000 size:0x100000 align: 0x100000
+[0059.690] I> allocated(CO:27) base:0x272900000 size:0x100000 align: 0x100000
+[0059.697] I> allocated(CO:42) base:0x272800000 size:0x100000 align: 0x100000
+[0059.704] I> allocated(CO:54) base:0x273100000 size:0x80000 align: 0x80000
+[0059.711] I> allocated(CO:34) base:0x2727f0000 size:0x10000 align: 0x10000
+[0059.718] I> allocated(CO:72) base:0x2725f0000 size:0x200000 align: 0x10000
+[0059.725] I> allocated(CO:46) base:0x240000000 size:0x20000000 align: 0x20000000
+[0059.732] I> allocated(CO:47) base:0x272000000 size:0x400000 align: 0x200000
+[0059.739] I> allocated(CO:50) base:0x271e00000 size:0x200000 align: 0x100000
+[0059.746] I> allocated(CO:48) base:0x2725d0000 size:0x20000 align: 0x10000
+[0059.753] I> allocated(CO:69) base:0x2725b0000 size:0x20000 align: 0x10000
+[0059.759] I> allocated(CO:49) base:0x2725a0000 size:0x10000 align: 0x10000
+[0059.766] I> NSDRAM base: 0x80000000, end: 0x2725f0000, size: 0x1f25f0000
+[0059.773] I> Task: Thermal check
+[0059.776] I> Using min_chip_limit as min_tmon_limit
+[0059.781] I> Using max_chip_limit as max_tmon_limit
+[0059.785] I> BCT max_tmon_limit = 105
+[0059.789] I> BCT min_tmon_limit = -28
+[0059.792] I> BCT max_tmon_limit = 105
+[0059.796] I> BCT min_tmon_limit = -28
+[0059.799] I> SKU specific max_chip_limit = 105
+[0059.804] I> SKU specific min_chip_limit = -28
+[0059.808] I> BCT max_chip_limit = 105
+[0059.811] I> BCT min_chip_limit = -28
+[0059.815] I> enable_soctherm_polling = 0
+[0059.819] I> max temp read = 43
+[0059.822] I> min temp read = 42
+[0059.825] I> Enabling thermtrip
+[0059.828] I> Task: Update FSI SCR with thermal fuse data
+[0059.833] I> Task: Enable WDT 5th expiry
+[0059.837] I> Task: I2C register
+[0059.840] I> Task: Set I2C bus freq
+[0059.843] I> Task: Reset FSI
+[0059.846] I> Task: Pinmux init
+[0059.849] I> skipped mmio_addr = 0x9240008
+[0059.853] I> skipped mmio_addr = 0x9240000
+[0059.857] I> skipped mmio_addr = 0x9240010
+[0059.861] I> skipped mmio_addr = 0x9240018
+[0059.865] I> skipped mmio_addr = 0x9240020
+[0059.869] I> skipped mmio_addr = 0x9240030
+[0059.873] I> skipped mmio_addr = 0x9240028
+[0059.876] I> skipped mmio_addr = 0x9240038
+[0059.880] I> skipped mmio_addr = 0x9240040
+[0059.884] I> skipped mmio_addr = 0x9240048
+[0059.888] I> skipped mmio_addr = 0x9241000
+[0059.892] I> skipped mmio_addr = 0x9241008
+[0059.896] I> skipped mmio_addr = 0x9241010
+[0059.900] I> skipped mmio_addr = 0x9241018
+[0059.904] I> skipped mmio_addr = 0x9241020
+[0059.908] I> skipped mmio_addr = 0x9241028
+[0059.912] I> skipped mmio_addr = 0x9241030
+[0059.916] I> skipped mmio_addr = 0x9241038
+[0059.920] I> skipped mmio_addr = 0x9241040
+[0059.924] I> skipped mmio_addr = 0x9242000
+[0059.928] I> skipped mmio_addr = 0x9242008
+[0059.932] I> Task: Prod config init
+[0059.935] I> Task: Pad voltage init
+[0059.938] I> Task: Prod init
+[0059.941] I> Task: Program rst req config reg
+[0059.945] I> Task: Common rail init
+[0059.949] I> DONE: Thermal config
+[0059.953] W> DEVICE_PROD: module = 13, instance = 4 not found in device prod.
+[0059.961] I> DONE: SOC rail config
+[0059.965] W> PMIC_CONFIG: Rail: MEMIO rail config not found in MB1 BCT.
+[0059.971] I> DONE: MEMIO rail config
+[0059.975] W> PMIC_CONFIG: Rail: GPU rail info not found in MB1 BCT.
+[0059.981] I> DONE: GPU rail info
+[0059.985] W> PMIC_CONFIG: Rail: CV rail info not found in MB1 BCT.
+[0059.991] I> DONE: CV rail info
+[0059.994] I> Task: Mem clock src
+[0059.997] I> Task: Misc. board config
+[0060.001] I> PMIC_CONFIG: Platform config not found in MB1 BCT.
+[0060.007] I> Task: SDRAM init
+[0060.010] I> MemoryType: 4 MemBctRevision: 1
+[0060.016] I> MSS CAR: PLLM/HUB programming for MemoryType: 4 and MemBctRevision: 1
+[0060.024] I> MSS CAR: Init PLLM
+[0060.027] I> MSS CAR: Init PLLHUB
+[0060.031] I> Encryption:   MTS: en, TX: en, VPR: en, GSC: en
+[0060.043] I> SDRAM initialized!
+[0060.046] I> SDRAM Size in Total 0x200000000
+[0060.050] I> Task: Dram Ecc scrub
+[0060.053] I> Task: DRAM alias check
+[0060.060] I> Task: Program NSDRAM carveout
+[0060.064] I> NSDRAM carveout encryption is enabled
+[0060.068] I> Program NSDRAM carveout
+[0060.072] I> Task: Register checker
+[0060.075] I> Task: Enable clock-mon
+[0060.079] I> FMON: Fmon re-programming done
+[0060.083] I> Task: Mapper init
+0060.086] I> Task: SC7 Context Init
+[0060.090] W> SC7_CONTEXT_SAVE: SC7 ctx save is not supported.
+[0060.095] I> Task: CCPLEX IST init
+[0060.098] I> Task: CPU WP0
+[0060.101] I> Loading MCE
+[0060.103] I> Slot: 0
+[0060.105] I> Binary[8] block-134217728 (partition size: 0x80000)
+[0060.111] I> Binary name: MCE
+[0060.114] I> Size of crypto header is 8192
+[0060.118] I> Size of crypto header is 8192
+[0063.265] I> BCH of MCE read from storage
+[0063.269] I> BCH address is : 0x4003e000
+[0063.273] I> MCE header integrity check is success
+[0063.278] I> Binary magic in BCH component 0 is MTSM
+[0063.283] I> component binary type is 8
+[0063.286] I> Size of crypto header is 8192
+[0063.293] I> MCE binary is read from storage
+[0063.298] I> MCE binary integrity check is success
+[0063.303] I> Binary MCE loaded successfully at 0x40000000 (0x2baf0)
+[0063.309] I> Size of crypto header is 8192
+[0063.313] I> Sending WP0 mailbox command to PSC
+[0063.322] I> Task: XUSB Powergate
+[0063.325] I> Skipping powergate XUSB.
+[0063.329] I> Task: MB1 fixed firewalls
+[0063.335] W> Firewall readback mismatch
+[0063.340] I> Task: Load bpmp-fw
+[0063.343] I> Slot: 0
+[0063.345] I> Binary[15] block-251658240 (partition size: 0x180000)
+[0063.351] I> Binary name: BPMP_FW
+[0063.354] I> Size of crypto header is 8192
+[0063.358] I> Size of crypto header is 8192
+[0063.362] I> BCH of BPMP_FW read from storage
+[0063.366] I> BCH address is : 0x807fe000
+[0063.370] I> BPMP_FW header integrity check is success
+[0063.375] I> Binary magic in BCH component 0 is BPMF
+[0063.380] I> component binary type is 15
+[0063.384] I> Size of crypto header is 8192
+[0063.405] I> BPMP_FW binary is read from storage
+[0063.411] I> BPMP_FW binary integrity check is success
+[0063.416] I> Binary BPMP_FW loaded successfully at 0x80000000 (0xf8bc0)
+[0063.423] I> Slot: 0
+[0063.425] I> Binary[16] block-268435456 (partition size: 0x400000)
+[0063.431] I> Binary name: BPMP_FW_DTB
+[0063.434] I> Size of crypto header is 8192
+[0063.438] I> Size of crypto header is 8192
+[0063.442] I> BCH of BPMP_FW_DTB read from storage
+[0063.447] I> BCH address is : 0x807fc000
+[0063.451] I> BPMP_FW_DTB header integrity check is success
+[0063.456] I> Binary magic in BCH component 0 is BPMD
+[0063.461] I> component binary type is 16
+[0063.465] I> Size of crypto header is 8192
+[0063.472] I> BPMP_FW_DTB binary is read from storage
+[0063.477] I> BPMP_FW_DTB binary integrity check is success
+[0063.482] I> Binary BPMP_FW_DTB loaded successfully at 0x807cc070 (0x2ff80)
+[0063.489] I> Task: BPMP fw ast config
+[0063.493] I> Task: Load psc-fw
+[0063.496] I> Slot: 0
+[0063.498] I> Binary[17] block-285212672 (partition size: 0xc0000)
+[0063.504] I> Binary name: PSC_FW
+[0063.507] I> Size of crypto header is 8192
+[0063.511] I> Size of crypto header is 8192
+[0063.515] I> BCH of PSC_FW read from storage
+[0063.519] I> BCH address is : 0x80ffe000
+[0063.523] I> PSC_FW header integrity check is success
+[0063.528] I> Binary magic in BCH component 0 is PFWP
+[0063.532] I> component binary type is 17
+[0063.536] I> Size of crypto header is 8192
+[0063.545] I> PSC_FW binary is read from storage
+[0063.550] I> PSC_FW binary integrity check is success
+[0063.555] I> Binary PSC_FW loaded successfully at 0x80fb4210 (0x49df0)
+[0063.562] I> Task: Load nvdec-fw
+[0063.565] I> Slot: 0
+[0063.567] I> Binary[7] block-117440512 (partition size: 0x100000)
+[0063.573] I> Binary name: NVDEC
+[0063.576] I> Size of crypto header is 8192
+[0063.580] I> Size of crypto header is 8192
+[0063.584] I> BCH of NVDEC read from storage
+[0063.588] I> BCH address is : 0x800fe000
+[0063.592] I> NVDEC header integrity check is success
+[0063.596] I> Binary magic in BCH component 0 is NDEC
+[0063.601] I> component binary type is 7
+[0063.605] I> Size of crypto header is 8192
+[0063.614] I> NVDEC binary is read from storage
+[0063.618] I> NVDEC binary integrity check is success
+[0063.623] I> Binary NVDEC loaded successfully at 0x80000000 (0x46000)
+[0063.632] I> Task: Load tsec-fw
+[0063.635] I> TSEC-FW load support not enabled
+[0063.639] I> Task: GPIO interrupt map
+[0063.643] I> Task: SC7 context save
+[0063.647] W> SC7_CONTEXT_SAVE: SC7 ctx save is not supported.
+[0063.653] I> Task: Load MB2/Applet/FSKP
+[0063.656] I> Loading MB2
+[0063.659] I> Slot: 0
+[0063.661] I> Binary[6] block-100663296 (partition size: 0x80000)
+[0063.667] I> Binary name: MB2
+[0063.669] I> Size of crypto header is 8192
+[0063.673] I> Size of crypto header is 8192
+[0063.677] I> BCH of MB2 read from storage
+[0063.681] I> BCH address is : 0x8007e000
+[0063.685] I> MB2 header integrity check is success
+[0063.690] I> Binary magic in BCH component 0 is MB2B
+[0063.694] I> component binary type is 6
+[0063.698] I> Size of crypto header is 8192
+[0063.709] I> MB2 binary is read from storage
+[0063.714] I> MB2 binary integrity check is success
+[0063.719] I> Binary MB2 loaded successfully at 0x80000000 (0x696a0)
+[0063.725] I> Task: Map CCPLEX SHARED carveout
+[0063.729] I> Task: Prepare MB2 params
+[0063.733] I> Task: Dram ecc test
+[0063.736] I> Task: Misc NV security settings
+[0063.740] I> NVDEC sticky bits programming done
+[0063.745] I> Successfully powergated NVDEC
+[0063.749] I> Task: Disable/Reload WDT
+[0063.752] I> Task: Program misc carveouts
+[0063.756] I> Program IPC carveouts
+[0063.760] I> Task: Disable SCPM/POD reset
+[0063.764] I> SLCG Global override status := 0x0
+[0063.768] I> MB1: MSS reconfig completed
+I> MB2 (version: 0.0.0.0-t234-54845784-af79ed0a)
+I> t234-A01-1-Silicon (0x12347)
+I> Boot-mode : RCM BOOT
+I> Emulation: 
+I> Entry timestamp: 0x03cd6cde
+I> Regular heap: [base:0x40040000, size:0x10000]
+I> DMA heap: [base:0x273800000, size:0x800000]
+I> Task: SE error check
+I> Task: Crypto init
+I> Task: MB2 Params integrity check
+I> Task: Enable CCPLEX WDT 5th expiry
+I> Task: ARI update carveout TZDRAM
+I> Task: Configure OEM set LA/PTSA values
+I> Task: Check MC errors
+I> Task: Enable hot-plug capability
+I> Task: Set blob address
+I> Task: PSC mailbox init
+I> Task: Enable clock for external modules
+I> Task: Measured Boot init
+I> Task: fTPM silicon identity init
+I> fTPM is not enabled.
+I> Task: I2C register
+I> Task: Map CCPLEX_INTERWORLD_SHMEM carveout
+I> Task: Program CBB PCIE AMAP regions
+I> Task: Pass DRAM ECC PRL Flag to FSI
+I> Task: Load and authenticate registered FWs
+I> Task: Load AUXP FWs
+I> Successfully register SPE FW load task with MB2 loader
+I> Successfully register RCE FW load task with MB2 loader
+I> Successfully register DCE FW load task with MB2 loader
+I> Unpowergating APE
+I> Unpowergate done
+I> Successfully register APE FW load task with MB2 loader
+I> Skipping FSI FW load
+I> Successfully register XUSB FW load task with MB2 loader
+I> Successfully register PVA FW load task with MB2 loader
+I> spe: Authentication Finalize Done
+I> Binary spe loaded successfully at 0x272e00000
+I> rce: Authentication Finalize Done
+I> Binary rce loaded successfully at 0x272a00000
+I> dce: Authentication Finalize Done
+I> Binary dce loaded successfully at 0x27a000000
+I> ape: Authentication Finalize Done
+I> Binary ape loaded successfully at 0x27d800000
+I> xusb: Authentication Finalize Done
+I> Binary xusb loaded successfully at 0x272f00000
+I> pva-fw: Authentication Finalize Done
+I> Binary pva-fw loaded successfully at 0x273180000
+I> Task: Check MC errors
+I> Task: Carveout setup
+I> Program remaining OEM carveouts
+I> Task: Enable FSI VMON
+I> Task: Restore XUSB sec
+I> Task: Enable FSI SE clock
+I> Task: Initialize SBSA UART CAR
+I> Task: Initialize CPUBL Params
+I> CPUBL-params @ 0x276000000
+I> Task: Prepare eeprom data
+I> Task: Unpowergate APE
+W> mb2_unpowergate_ape: skip! APE is in unpowergated state
+I> Task: Memctrl reconfig pending clients
+I> Task: OEM firewalls
+I> OEM firewalls configured
+I> Task: Powergate APE
+I> Powergating APE
+I> Powergate done
+I> Task: OEM firewall restore saved settings
+I> Task: Unhalt AUXPs
+I> Unhalting SPE..
+I> Enabling combined UART 
+????spe: early_init
+????vic initialized
+????tsc initialized
+????aon lic initialized
+????spe: tag is 5243985d1b1eb3f06fac6d36bd7e74ac
+????spe: SafeRTOS v8.4
+????spe: init
+????scheduler initialized
+????aon hsp initialized
+????tag initialized
+????tcu initialized
+????bpmp ipc initialized
+????spe: late init
+????cpu_nic clock initialized
+????apb clock initialized
+????pm initialized
+????bpmp hsp initialized
+????top1 hsp initialized
+????ccplex ipc initialized
+????spe: start scheduler
+????
+    I> Task: Trigger mailbox for PSC-BL1 exit
+I> Sending opcode 0x4d420802 to psc
+I> Received ACK from psc
+I> Task: Start secure NOR provision
+I> Skip Secure NOR provisioning
+I> Task: Trigger load FSI keyblob
+I> Task: Complete load FSI keyblob
+I> Task: MB2-PSC_FW Key Manager Init
+I> Sending opcode OP_PSC_KEY_MANAGER to psc-fw
+I> Sending opcode 0x4b45594d to psc
+??
+  hwwdt_init: WDT boot cfg 0x710010 sts 0x10
+bpmp: socket 0
+bpmp: base binary md5 is 3b0e1a33cf85c7f62a7e8b93c2af97ed
+bpmp: combined binary md5 is 4f590cddd4eeb67cd15bf080683d6d83
+bpmp: firmware tag is 4f590cddd4eeb67cd15b-3b0e1a33cf8
+Write control check for CBB_CENTRAL_CBB_FIREWALL_PWM7_BLF failed, expected value: 00100008 != actual value: 0010000a address: 13a178a8
+initialized vwdt
+initialized mail_early
+initialized fuse
+initialized vfrel
+initialized adc
+fmon_populate_monitors: found 199 monitors
+initialized fmon
+initialized mc
+initialized reset
+initialized uphy_early
+initialized emc_early
+initialized pm
+465 clocks registered
+initialized clk_mach
+initialized clk_cal_early
+initialized clk_mach_early_config
+initialized io_dpd
+initialized soctherm
+initialized regime
+initialized i2c
+vrmon_dt_init: vrmon node not found
+vrmon_chk_boot_state: found 0 rail monitors
+initialized vrmon
+initialized regulator
+??I> Received ACK from psc
+I> Task: Unhalt FSI
+I> FSI unhalt skipped
+I> Task: Unhalt AUXPs
+I> Unhalting RCE
+I> RCE unhalt successful
+I> Unhalting DCE
+I> DCE unhalt successful
+I> APE unhalt skipped
+I> Task: Load H??initialized avfs_clk_platform
+??[     4.924225] Camer??
+                         ??a-FW on t234-rce-safe started
+??initialized dvs
+initialized clk_mach_conf??TCU early console enabled.
+??ig
+suspend progress: 0x0
+initialized suspend
+initialized strap
+initialized mce_dbell
+??V/CPUBL
+I> Task: Load TOS
+I> Task: Trigger load TSEC leyblob
+I> Sending opcode 0x53535452 to psc
+I> Sent opcode ??
+??to psc
+I> Task: Load and authenticate re??initialized emc
+initialized emc_mrq
+??gistered FWs
+??DCE Started
+??initialized clk_cal
+initialized uphy_dt
+initialized uphy_mrq
+HSIO UPHY reset has been de-asserted 0x0
+initialized uphy
+initialized pg_late
+initialized pg_mrq_init
+swdtimer_init: reg polling start w period 47 ms
+initialized swdtimer
+initialized hwwdt_late
+initialized bwmgr
+initialized thermal_host_trip
+initialized thermal_mrq
+initialized oc_mrq
+initialized reset_mrq
+initialized mail_mrq
+initialized fmon_mrq
+initialized clk_mrq
+initialized avfs_mrq
+initialized i2c_mrq
+initialized tag_mrq ???
+why not printing after this ??
