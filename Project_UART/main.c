@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /*
-1. USART2 -->PA2 and PA3
+1. USART2 --> PA2 and PA3
 2. Enable Clcok for UART-->RCC_APB2ENR - BIt 4
 3. Enanble clock for PortA-->RCC_AHB1ENR-->Bit 0
 4. Configure GPIOs for alternate Functionality.
